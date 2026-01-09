@@ -1,0 +1,28 @@
+.collectionContainer {
+    background-color: #9bb79d;
+    padding: 20px; 
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.imageWrapper {
+    margin-bottom: 20px;
+}
+
+
+.imageWrapper {
+    margin-bottom: 20px;
+}
+
+.photo {
+    height: 300px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.header {
+    color: #fff;
+}
+
+

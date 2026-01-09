@@ -1,0 +1,331 @@
+/* Events.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #9bb79d;
+  color: #FFFFFF;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.backLink {
+  align-items: center;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  line-height: 1;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  transition: box-shadow .15s,transform .15s;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.backLink:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.backLink:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.backLink:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.backLink:hover {
+  color: #000000;
+}
+
+.contactLink {
+  align-items: center;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  line-height: 1;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  transition: box-shadow .15s,transform .15s;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.contactLink:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.contactLink:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.contactLink:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.contactLink:hover {
+  color: #000000;
+}
+
+.title {
+  font-size: 60px;
+  font-style: oblique, bold;
+  font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold, italic;
+  text-align: center; 
+  font-weight: 600;
+  color: #05240f;
+  text-shadow: 2px 2px 0px  #4e5250,
+               4px 4px 0px #8ea793,
+               6px 6px 0px #4e562c,
+               8px 8px 0px #76854f,
+               10px 10px 0px #20503d;
+  padding: 20px;
+}
+
+.serviceSelection {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.serviceLink {
+  color: #ffffff;
+  text-shadow: 2px 2px 0px  #4e5250,
+              4px 4px 0px #8ea793;
+}
+
+.serviceDescription {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.contactInfo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.servicesContainer {
+  position: relative;
+  display: flex; 
+  align-items: center;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.services {
+  display: flex;
+  overflow: hidden; 
+  width: 100%; 
+  justify-content: center; 
+}
+
+.service {
+  text-align: center;
+}
+
+.serviceImage {
+  width: 100%; 
+  height: auto;
+  display: block;
+}
+
+.imageWrapper {
+  width: 400px; 
+  height: 500px;
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  margin: 20px;
+  background-position: center; 
+  background-size: cover; 
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease; 
+  
+}
+
+.overlayContent {
+  text-align: center;
+}
+
+.overlayText {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.imageWrapper:hover .overlay {
+  opacity: 0.5;
+  background: linear-gradient(#05240f, #20503d, #8ea793);
+}
+
+.footerButton {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px; 
+  display: block;
+}
+
+.footer {
+  background-color: #4A4A4A; 
+  color: white;
+  text-shadow: 2px 2px 0px  #05240f;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  font-size: 0.8em;
+}
+
+.footerText {
+  font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bookServicesButton {
+  align-items: center;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  line-height: 1;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  transition: box-shadow .15s,transform .15s;
+  touch-action: manipulation;
+  white-space: nowrap;
+  text-decoration: underline;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.bookServicesButton:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.bookServicesButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.bookServicesButton:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.bookServicesButton:hover {
+  color: #000000;
+}
+
+.gallery {
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-cell {
+  width: 33.33%;
+  height: 500px;
+  margin-right: 10px;
+}
+
+.LearnMore {
+  align-items: center;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  height: 30px;
+  justify-content: center;
+  line-height: 1;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  transition: box-shadow .15s,transform .15s;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 16px;
+  margin: 20px;
+}
+
+.LearnMore:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.LearnMore:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.LearnMore:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.LearnMore:hover {
+  color: #000000;
+}
