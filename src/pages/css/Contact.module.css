@@ -94,6 +94,12 @@
   border-radius: 10px; /* Optional: for rounded corners */
 }
 
+.modalContent ::placeholder {
+  color: red;
+
+
+}
+
 .closeButton {
   color: #aaa;
   float: right;

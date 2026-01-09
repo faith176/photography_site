@@ -104,10 +104,6 @@ const Contact = () => {
               <label htmlFor="exampleFormControlTextarea1">{t('pages.contact.Comment')}</label>
               <textarea name="message" value={formData.message} onChange={handleInputChange} className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-
-            <button type="submit" className="submitButton mt-3">
-              {t('pages.contact.submitButton')}
-            </button>
           </form>
           <button className="submitButton mt-3" onClick={handleSubmit}>{t('pages.contact.submitButton')}</button>
         </div>

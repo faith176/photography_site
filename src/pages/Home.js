@@ -16,7 +16,7 @@ const Home = () => {
                 </div>
                 <div>
                     <Link to="/about">
-                        <Button variant="light" size="lg" className={styles.learnMoreBtn}>{t('pages.home.learnMore')}</Button>
+                        <Button variant="dark" size="lg" className={styles.learnMoreBtn}>{t('pages.home.learnMore')}</Button>
                     </Link>
                 </div>
             </div>

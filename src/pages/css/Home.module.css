@@ -36,7 +36,6 @@
 }
 
 .learnMoreBtn{
-    background-color: #e2dfdf;
     border-radius: 5px;
     max-width: 200px;
     white-space: nowrap;
@@ -76,7 +75,7 @@
 }
 
 .subtitle {
-    /* padding-left: 25px; */
+    padding-right: 25px;
     text-align:end;
     align-items: end;
 }

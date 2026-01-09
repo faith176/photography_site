@@ -1,153 +1,100 @@
 .blogContainer {
-    width: 100%;
-    height: 100vh;
-    background-color: #9bb79d; 
-    position: relative;
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: #9bb79d;
 }
 
-.titleWrapper {
-    width:100%;
-    height:10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
+/* Header */
+.header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 3rem;
 }
 
-
-.title h1 {
-    color:#000;
-    font-weight: 400;
-    font-size:5.75vw;
-    align-items: end;
-}
-  
-.numberText {
-    margin-right: 10px;
-    color: #d8d64f;
-    font-size: 7vw;
+.title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+  color: #000;
 }
 
-.mainWrapper
-
-
-.firstImg{
-    background-image: url(./../../assets/blog_1.webp);
-    background-size: cover;
-    width:35%
+.year {
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: #d8d64f;
 }
 
-.secondImg{
-    background-image: url(./../../assets/blog_2.jpg);
-    background-size: cover;
-    width:35%
-}
-
-.thirdImg{
-    background-image: url(./../../assets/blog_3.jpeg);
-    background-size: cover;
-    width:35%
-}
-
-.fourthImg{
-    background-image: url(./../../assets/blog_4.jpg);
-    background-size: cover;
-    width:35%
-}
-
-.fifthImg{
-    background-image: url(./../../assets/blog_5.jpg);
-    background-size: cover;
-    width:35%
-}
-
-.description {
-    font-weight: 500;
-    color:#000;
-    font-size:1.25vw;
-    width:55%;
-}
-
-.subtitle {
-    padding-left: 25px;
-    text-align:end
-}
-
-.subtitle h3 {
-    color:#000;
-    font-weight: 400;
-    font-size:2.75vw;
-    align-items: end;
-}
-
-.semiCircle {
-    position: absolute;
-    bottom: -0;
-    right: -10; 
-    width: 80%;
-    height: 80%;
-    border-radius: 50%;
-    z-index: 0;
-    background-color: #809681;
-  }
-
+/* Gallery */
 .gallery {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    align-items: flex-start; /* Align items at the top */
-    padding: 20px;
-    z-index: 1; /* Ensure the gallery is above the semi-circle */
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
 }
 
-.galleryItem {
-    flex: 0 0 auto; /* Do not grow, do not shrink, and be based on its width */
-    margin: 10px;
-    text-align: center;
-    border-radius: 8px;
-    width: 300px; /* Adjust based on your preference */
-    background-color: #9bb79d;
-    transition: background-color 0.3s;
+.gallery::-webkit-scrollbar {
+  height: 6px;
 }
+
+.gallery::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+/* Cards */
+.galleryItem {
+  flex: 0 0 360px;        /* was 280px */
+  border-radius: 14px;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+.galleryItem img {
+  width: 100%;
+  height: 260px;          /* was 200px */
+  object-fit: cover;
+  border-radius: 14px;
+}
+
 
 .galleryItem:hover {
-    background-color: #c2d8c3; /* Lighter background color on hover */
+  transform: translateY(-5px);
 }
 
-.galleryImage {
-    width: 100%; /* Image will take up the full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px;
+.galleryItem:hover img {
+  filter: brightness(1.05);
 }
 
-.galleryDescription {
-    margin-top: 5px;
-    color: #333;
-    font-size: 1rem;
+
+.galleryItem h3 {
+  margin: 0.75rem 0 0.25rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #000;
 }
 
-.galleryTitle {
-    font-size: 1.7rem; /* Adjust the size as needed */
-    color: #333; /* Title color */
-    margin: 5px 0; /* Space above and below the title */
+.galleryItem p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
 }
 
-.galleryDescription {
-    margin-top: 5px;
-    color: #333;
-    font-size: 1rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 280px; /* Adjust based on your design */
-    cursor: pointer;
+.cameraInfo {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  opacity: 0.85;
+  font-family: 'Courier New', monospace; /* optional, but nice */
 }
 
-.galleryDescription:hover {
-    white-space: normal;
-    overflow: visible;
-    text-overflow: clip;
-    cursor: pointer;
-}
 
+/* Mobile */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
