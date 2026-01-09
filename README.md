@@ -1,45 +1,46 @@
 # 📸 WanderLens
 
-WanderLens is a sample React photography portfolio website, including collections, events, and blog-style content.  
+WanderLens is a **sample React photography portfolio website** designed to showcase photo collections, events, and visual storytelling. The project focuses on layout, image presentation, and navigation.
 
 ---
-### Home
-Landing page introducing the WanderLens aesthetic and mission.
+
+## Home
+Landing page that introduces the WanderLens aesthetic and overall theme.
 
 ![Home Page](samples/Home.png)
 
 ---
 
-### Collections
-A grid-based gallery view showcasing photography across different themes and styles.
+## Collections
+Gallery-style layout showcasing photography across different themes and styles.
 
 ![Collections Page](samples/Collections.png)
 
 ---
 
-### Events
-Highlights of exhibitions, workshops, and photography events.
+## Events
+Highlights of exhibitions, workshops, and photography-related events.
 
 ![Events Page](samples/Events.png)
 
 ---
 
-### Blog
-Storytelling through photography-focused articles and visual essays.
+## Blog
+Timeline-style visual storytelling using photography and text.
 
 ![Blog Page](samples/Blog.png)
 
 ---
 
-### ℹAbout
-Narrative-driven section explaining the story behind WanderLens and its creative vision.
+## About
+Section describing the story behind WanderLens and its creative vision.
 
 ![About Page](samples/About.png)
 
 ---
 
-### Contact
-Contact form for client inquiries, collaborations, and bookings.
+## Contact
+Contact form for inquiries, collaborations, and bookings.
 
 ![Contact Page](samples/Contact.png)
 
